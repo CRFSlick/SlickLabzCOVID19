@@ -2,44 +2,34 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Bare - Start Bootstrap Template</title>
+    <title>SlickLabz COVID19</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-
 </head>
 
 <body>
-
     <br>
-
     <div style="width: 50%; margin:0 auto; text-align: center;">
         <span style="font-size: 2.5rem; font-weight: bold;">SlickLabz COVID-19 Graphic</span><br>
         <span>A simple graphical view confirmed CVOID-19 cases</span>
     </div>
-
     <br>
-
     <div id="input" style="width: 50%; margin:0 auto; text-align: center;">
         <div class="autocomplete" style="width:300px;">
             <input id="myInput" type="text" name="myCountry" placeholder="Country">
         </div>
         <input id="submit-button" type="submit">
     </div>
-
     <br>
-
     <div style="width: 80%; height: 80%; margin:0 auto;">
         <canvas id="myChart"></canvas>
     </div>
-
 </body>
 
 </html>
