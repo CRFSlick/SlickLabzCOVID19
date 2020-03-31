@@ -1,11 +1,6 @@
 import requests
 import json
 
-'''
-https://api.covid19api.com/countries
-https://api.covid19api.com/total/country/spain/status/confirmed
-'''
-
 API_URL_COUNTRIES = 'https://api.covid19api.com/countries'
 API_URL_CONFIRMED = 'https://api.covid19api.com/total/country/spain/status/confirmed'
 
@@ -58,7 +53,3 @@ def get_confirmed(country=None):
             data = json.loads(response.text)
             for item in data:
                 print(item)
-
-
-# get_confirmed('china')
-# print(get_countries())

@@ -115,10 +115,13 @@ function FormatDate(date, padding, paddingLength) {
 
 function InitializeGraph() {
     CTX = document.getElementById('myChart').getContext('2d');
+    // CTX.height = 5000;
     CHART = new Chart(CTX, {
         type: 'line',
         scaleStartValue: 0,
         options: {
+            maintainAspectRatio: false,
+            responsive: true,
             scales: {
                 yAxes: [{
                     ticks: {

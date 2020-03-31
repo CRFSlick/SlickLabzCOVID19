@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 
-<body>
+<body style="height: 100vh;">
     <br>
     <div style="width: 50%; margin:0 auto; text-align: center;">
         <span style="font-size: 2.5rem; font-weight: bold;">SlickLabz COVID-19 Graphic</span><br>
@@ -21,13 +21,13 @@
     </div>
     <br>
     <div id="input" style="width: 50%; margin:0 auto; text-align: center;">
-        <div class="autocomplete" style="width:300px;">
+        <div class="autocomplete">
             <input id="myInput" type="text" name="myCountry" placeholder="Country">
         </div>
         <input id="submit-button" type="submit">
     </div>
     <br>
-    <div style="width: 80%; height: 80%; margin:0 auto;">
+    <div class="wrapper">
         <canvas id="myChart"></canvas>
     </div>
 </body>
